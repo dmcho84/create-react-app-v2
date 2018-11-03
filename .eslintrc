@@ -31,40 +31,4 @@
       }
     ]
   }
-
-  /*
-
-
-  "rules": {
-    "react/prefer-stateless-function": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-one-expression-per-line": 0,
-    "comma-dangle": [2, "never"],
-    "no-param-reassign": [
-      "error",
-      {
-        "props": false
-      }
-    ],
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": true,
-        "ignoreMemberSort": true
-      }
-    ]
-  },
-  "settings": {
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": ["src"]
-      }
-    ]
-  },
-  "env": {
-    "browser": true,
-    "node": true
-  }
-*/
 }
