@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 
-const withSplitting = getComponent => {
+const withSplitting = (getComponent) => {
   class WithSplitting extends Component {
     static Splitted = null;
+
     static preload() {
       getComponent().then(({ default: Splitted }) => {
         WithSplitting.Splitted = Splitted;
