@@ -9,10 +9,11 @@
   },
   "rules": {
     "no-console": "off",
-    "import/no-unresolved": "off",
     "import/order": "off",
-    "react/prefer-stateless-function": "off",
+    "import/no-unresolved": "off",
     "comma-dangle": ["error", "never"],
+    "react/destructuring-assignment": "off",
+    "react/prefer-stateless-function": "off",
     "no-param-reassign": ["error", { "props": false }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-underscore-dangle": [
