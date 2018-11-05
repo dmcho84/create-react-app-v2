@@ -10,20 +10,28 @@
   "rules": {
     "no-console": "off",
     "import/order": "off",
+    "react/prop-types": "off",
     "import/no-unresolved": "off",
-    "comma-dangle": ["error", "never"],
+    "react/forbid-prop-types": "off",
     "react/destructuring-assignment": "off",
     "react/prefer-stateless-function": "off",
-    "no-param-reassign": ["error", { "props": false }],
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-boolean-value": [2, "never", { "always": ["exact"] }],
+    "no-param-reassign": [2, { "props": false }],
+    "comma-dangle": [2, "never"],
     "no-underscore-dangle": [
-      "error",
+      2,
       {
-        "allow": ["__REDUX_DEVTOOLS_EXTENSION__"]
+        "allow": [
+          "__PRELOADED_STATE__",
+          "__REDUX_DEVTOOLS_EXTENSION__",
+          "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"
+        ]
       }
     ],
     "quotes": [
-      "error",
+      2,
       "double",
       {
         "allowTemplateLiterals": true,

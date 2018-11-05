@@ -1,25 +1,19 @@
-import { Link, Route } from "react-router-dom";
 import React, { Component } from "react";
-import { About, Home } from "pages";
+import { Route, Switch } from "react-router-dom";
+import {
+  AboutPage, HomePage, GamePage, NoMatch
+} from "pages";
 
 class App extends Component {
   render() {
     return (
-      <div id="inner-root">
-        <h1>Just Do It</h1>
-        그냥해
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-        <Route exact path="/" component={Home} />
-        <Route exact={false} path="/about" component={About} />
+      <div id="wrap">
+        <Switch>
+          <Route exact={true} path="/" component={HomePage} />
+          <Route exact={false} path="/about" component={AboutPage} />
+          <Route exact={false} path="/game" component={GamePage} />
+          <Route component={NoMatch} />
+        </Switch>
       </div>
     );
   }

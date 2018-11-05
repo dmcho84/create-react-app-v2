@@ -1,13 +1,20 @@
 import React, { Component } from "react";
+import { Provider } from "react-redux";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import store from "redux/store";
+
 import App from "./App";
 
-import { BrowserRouter } from "react-router-dom";
 
 class Root extends Component {
   render() {
     return (
       <BrowserRouter>
-        <App />
+        <Provider store={store}>
+          <Switch>
+            <Route exact={false} path="/" component={App} />
+          </Switch>
+        </Provider>
       </BrowserRouter>
     );
   }
